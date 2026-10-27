@@ -9,7 +9,7 @@
     "headshot": "images/profile-placeholder.svg",
     "headshot_alt": "Optional profile image placeholder",
     "cv_label": "Download CV",
-    "cv_url": "",
+    "cv_url": "assets/cv.pdf",
     "linkedin_url": ""
   },
   "about": {
