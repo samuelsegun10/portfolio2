@@ -1,14 +1,69 @@
 <!doctype html>
 <!-- Massively by HTML5 UP (html5up.net), used under CCA 3.0. Licence: https://html5up.net/license. -->
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A short introduction to what I am learning and the projects that show my work."><title>About | Student Portfolio</title>
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/css/student-home.css">
-<script src="../assets/js/student-theme.js?v=1.3.1"></script></head>
-<body data-root="../" data-info-page="about"><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="page-width header-inner"><a class="brand" href="../" aria-label="Go to homepage" data-brand>YN</a>
-<nav aria-label="Main navigation"><a href="../">Home</a><a href="../about/" aria-current="page">About</a><a href="../projects/">Projects</a><a href="../samples/" data-nav-samples hidden>Samples</a><a href="../insights/" data-nav-insights hidden>Insights</a><a href="../contact/">Contact</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">Light mode</button></nav></div></header>
-<main class="library-page page-width" id="main"><a class="back-link" href="../">← Back to homepage</a><header class="library-header">
-<span class="eyebrow">My learning journey</span><h1>About</h1><p>A short introduction to what I am learning and the projects that show my work.</p></header><div class="detail-layout info-layout"><article class="detail-panel"><h2 data-about-heading>What I'm learning</h2><p data-about-summary>I'm building practical skills through projects I can explain.</p><a class="button button-outline" href="../projects/">Explore projects</a></article><aside class="detail-panel info-portrait" data-info-portrait-wrap><img src="../images/profile-placeholder.svg" alt="Optional profile image placeholder" data-info-portrait></aside></div></main>
-<footer class="site-footer"><div class="page-width"><span data-footer-name>Your Name</span><span>Student portfolio</span></div></footer>
-<script src="../assets/js/student-shell.js" defer></script><script src="../assets/js/student-info.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="About the student and the work they are learning to do.">
+<title>About | Student Portfolio</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/student-home.css">
+<script src="../assets/js/student-theme.js?v=1.3.1"></script>
+</head>
+<body data-root="../" data-info-page="about">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+<div class="page-width header-inner">
+<a class="brand" href="../" aria-label="Go to homepage" data-brand>YN</a>
+<nav aria-label="Main navigation">
+<a href="../">Home</a>
+<a href="../about/" aria-current="page">About</a>
+<a href="../projects/">Projects</a>
+<a href="../samples/" data-nav-samples hidden>Samples</a>
+<a href="../insights/" data-nav-insights hidden>Insights</a>
+<a href="../contact/">Contact</a>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">Light mode</button>
+</nav>
+</div>
+</header>
+
+<main class="library-page page-width student-about" id="main">
+<a class="back-link" href="../">← Back to homepage</a>
+<header class="student-about-header">
+<h1 data-about-page-title>About Me</h1>
+</header>
+
+<section class="student-about-intro" aria-label="Introduction">
+<img class="student-about-portrait" src="../images/profile-placeholder.svg" alt="Optional profile image placeholder" data-info-portrait>
+<div class="student-about-bio" data-about-bio>
+<p>I'm building practical skills through projects I can explain.</p>
+</div>
+</section>
+
+<div class="student-about-grid" data-about-grid>
+<section class="student-about-section" aria-labelledby="skills-heading" data-about-skills-section hidden>
+<h2 id="skills-heading" data-about-skills-heading>Skills &amp; tools</h2>
+<p class="student-about-lead" data-about-skills-intro></p>
+<div class="student-skill-grid" data-about-skill-groups></div>
+</section>
+
+<section class="student-about-section" aria-labelledby="journey-heading" data-about-journey-section hidden>
+<h2 id="journey-heading" data-about-journey-heading>My journey</h2>
+<p class="student-about-lead" data-about-journey-intro></p>
+<ol class="student-about-timeline" data-about-journey-items></ol>
+</section>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="page-width">
+<span data-footer-name>Your Name</span>
+<span>Student portfolio</span>
+</div>
+</footer>
+
+<script src="../assets/js/student-shell.js" defer></script>
+<script src="../assets/js/student-info.js?v=about-2" defer></script>
+</body>
+</html>
