@@ -9,6 +9,9 @@ text("[data-title]",p.primary_title||p.headline);text("[data-summary]",p.summary
 if(!p.headshot)document.querySelector(".hero-visual").hidden=true;
 if(p.headshot&&p.headshot!=="images/project-placeholder.svg"){var portrait=document.querySelector("[data-portrait]");portrait.src=p.headshot;portrait.alt=p.headshot_alt||"Portrait of "+(p.name||"student")}
 link("[data-cv]",p.cv_url,p.cv_label||"Download CV");
+link("[data-hero-email]",c.email?"mailto:"+c.email:"");
+link("[data-hero-linkedin]",p.linkedin_url);
+link("[data-hero-github]",c.github_url);
 var has=false;has=link("[data-email]",c.email?"mailto:"+c.email:"",c.email)||has;has=link("[data-github]",c.github_url,"GitHub")||has;has=link("[data-linkedin]",p.linkedin_url,"LinkedIn")||has;
 if(has)document.querySelector("[data-contact-empty]").hidden=true;
 var grid=document.querySelector("[data-project-grid]"),projects=Array.isArray(content.projects)?content.projects.filter(function(x){return x&&x.title}):[];
