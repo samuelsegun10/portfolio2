@@ -19,3 +19,29 @@
 .hero-social a{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--text);text-decoration:none;font-size:.7rem;font-weight:800}
 .hero-social a:hover,.hero-social a:focus-visible{color:var(--accent);border-color:var(--accent)}
 .hero-social svg{width:16px;height:16px}
+
+.student-about-header h1{font-size:clamp(2.5rem,4vw,4rem);line-height:1.1;margin:1.5rem 0 1.5rem}
+.student-about-intro{display:flex;align-items:flex-start;gap:1.5rem;padding:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.student-about-portrait{width:96px;height:96px;flex:none;object-fit:cover;border:3px solid var(--accent);border-radius:50%}
+.student-about-bio{color:var(--muted)}
+.student-about-bio p{margin:.25rem 0 1rem}
+.student-about-bio p:last-child{margin-bottom:0}
+.student-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.student-about-grid.single{grid-template-columns:1fr}
+.student-about-section h2{font-size:1.5rem;line-height:1.2;margin:0 0 .35rem}
+.student-about-lead{color:var(--muted);margin:0 0 1.25rem}
+.student-about-lead:empty{display:none}
+.student-skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.student-skill-card{padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.student-skill-card h3{font-size:.85rem;margin:0 0 .65rem}
+.student-skill-card ul{margin:0;padding-left:1.15rem;color:var(--muted);font-size:.85rem}
+.student-skill-card li{padding:.25rem 0}
+.student-about-timeline{list-style:none;margin:0 0 0 .45rem;padding:0;border-left:2px solid var(--accent)}
+.student-about-timeline>li{position:relative;padding:0 0 1.5rem 1.2rem}
+.student-about-timeline>li::before{content:"";position:absolute;left:-.45rem;top:.25rem;width:.7rem;height:.7rem;background:var(--bg);border:2px solid var(--accent);border-radius:50%}
+.student-journey-period{display:block;color:var(--accent);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.student-about-timeline h3{font-size:.95rem;margin:.3rem 0}
+.student-journey-place{color:var(--muted);font-size:.82rem;margin:.2rem 0}
+.student-about-timeline ul{color:var(--muted);font-size:.82rem;padding-left:1rem}
+@media(max-width:800px){.student-about-grid{grid-template-columns:1fr}.student-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.student-about-intro{flex-direction:column}.student-about-portrait{width:80px;height:80px}.student-skill-grid{grid-template-columns:1fr}}
